@@ -62,3 +62,9 @@ Once installed, configure the plugin with your API Endpoint and API key in the p
 
 See more info: [https://s.apifox.cn/2b306df6-5d22-423f-83ba-ed07415b13d5](https://s.apifox.cn/2b306df6-5d22-423f-83ba-ed07415b13d5)  
 
+
+## Contact US
+
+![alt text](image.png)
+
+![alt text](image-4.png)
