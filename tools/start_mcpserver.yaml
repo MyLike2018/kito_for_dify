@@ -1,0 +1,18 @@
+identity:
+  name: StartMcpServer
+  author: kpai
+  label:
+    en_US: StartMcpServer
+    zh_Hans: StartMcpServer
+    pt_BR: StartMcpServer
+description:
+  human:
+    en_US: Start McpServer in the sandboxed environment.
+    zh_Hans: 启动McpServer服务
+    pt_BR: Start McpServer in the sandboxed environment.
+  llm: Start McpServer
+parameters: []
+
+extra:
+  python:
+    source: tools/start_mcpserver.py

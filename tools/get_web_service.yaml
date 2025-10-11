@@ -1,0 +1,18 @@
+identity:
+  name: GetWebService
+  author: kpai
+  label:
+    en_US: GetWebService
+    zh_Hans: GetWebService
+    pt_BR: GetWebService
+description:
+  human:
+    en_US: Get WebService Address in the sandboxed environment.
+    zh_Hans: 获取Kito主机中的WebServer服务地址
+    pt_BR: Get WebService Address in the sandboxed environment.
+  llm: GetWebService
+parameters: []
+
+extra:
+  python:
+    source: tools/get_web_service.py

@@ -1,0 +1,93 @@
+credentials_for_provider:
+  server:
+    help:
+      en_US: Kito Server API Endpoint
+      zh_Hans: Kito Server API Endpoint
+    label:
+      en_US: Kito Server API Endpoint
+      zh_Hans: Kito Server API Endpoint
+    placeholder:
+      en_US: Please input your Kito Server API Endpoint
+      zh_Hans: 请输入Kito Server的API Endpoint
+    required: true
+    type: select
+    options:
+      - label:
+          en_US: Kito-Node2
+          zh_Hans: Kito-节点2
+        value: https://node2.cloudsoc.vip/console/api/v1
+
+  apikey:
+    help:
+      en_US: Kito Server  Apikey
+      zh_Hans: Kito Server Apikey
+    label:
+      en_US: Kito Server  Apikey
+      zh_Hans: Kito Server Apikey
+    placeholder:
+      en_US: Please input your Kito Server Apikey
+      zh_Hans: 请输入你的Kito Server Apikey
+    required: true
+    type: secret-input
+    url: https://s.apifox.cn/2b306df6-5d22-423f-83ba-ed07415b13d5/doc-5681853
+
+  image:
+    help:
+      en_US: Kito AI Host Image
+      zh_Hans: Kito AI Host Image
+    label:
+      en_US: Kito AI Host Image
+      zh_Hans: Kito AI Host Image
+    placeholder:
+      en_US: Please input your Kito AI Host Image
+      zh_Hans: 请输入你的Kito AI Host Image
+    required: true
+    type: select
+    options:
+      - label:
+          en_US: kito-kali-image
+          zh_Hans: kito-kali-image
+        value: registry.cn-hangzhou.aliyuncs.com/kservice/kigo-kali
+
+  version:
+    help:
+      en_US: Kito AI Host Image Version
+      zh_Hans: Kito AI Host Image Version
+    label:
+      en_US: Kito AI Host Image Version
+      zh_Hans: Kito AI Host Image Version
+    placeholder:
+      en_US: Please input your Kito AI Host Image Version
+      zh_Hans: 请输入你的Kito AI Host Image Version
+    required: true
+    type: select
+    options:
+      - label:
+          en_US: kito-kali-version-latest
+          zh_Hans: kito-kali-version-latest
+        value: latest
+
+identity:
+  author: kpai
+  #Dify中添加工具处显示的工具名称
+  name: kito_dify
+  label:
+    en_US: kito ai computer assitant
+    zh_Hans: 卡兔AI主机助手(Dify)
+    pt_BR: kito ai computer assitant
+  description:
+    en_US: kito ai computer assitant
+    zh_Hans: 卡兔AI主机助手(Dify)
+    pt_BR: kito ai computer assitant
+  icon: icon.svg
+tools:
+  - tools/run_command.yaml
+  - tools/upload_file.yaml
+  - tools/start_mcpserver.yaml
+  - tools/stop_mcpserver.yaml
+  - tools/get_mcp_service.yaml
+  - tools/get_web_service.yaml
+
+extra:
+  python:
+    source: provider/kito.py

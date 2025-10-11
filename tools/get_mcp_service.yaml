@@ -1,0 +1,19 @@
+identity:
+  name: GetMcpService
+  author: kpai
+  label:
+    en_US: GetMcpService
+    zh_Hans: GetMcpService
+    pt_BR: GetMcpService
+description:
+  human:
+    en_US: Get McpService Address in the sandboxed environment.
+    zh_Hans: 获取Kito主机中的McpServer服务地址
+    pt_BR: Get McpService Address in the sandboxed environment.
+  llm: GetMcpService
+
+parameters: []
+
+extra:
+  python:
+    source: tools/get_mcp_service.py

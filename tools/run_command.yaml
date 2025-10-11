@@ -1,0 +1,30 @@
+identity:
+  name: RunCommand
+  author: kpai
+  label:
+    en_US: RunCommand
+    zh_Hans: RunCommand
+    pt_BR: RunCommand
+description:
+  human:
+    en_US: Run a command in a sandboxed environment.
+    zh_Hans: 执行沙箱环境中的命令
+    pt_BR: Run a command in a sandboxed environment.
+  llm: Run Command
+parameters:  
+  - name: command
+    type: string
+    required: true
+    label:
+      en_US: the command to run in the Kito AI Host
+      zh_Hans: 执行的命令
+      pt_BR: the command to run in the Kito AI Host
+    human_description:
+      en_US: the command to run in the Kito AI Host
+      zh_Hans: 在Kito的AI主机中执行的命令
+      pt_BR: the command to run in the Kito AI Host
+    llm_description: execute the command in the Kito's AI Host.
+    form: llm
+extra:
+  python:
+    source: tools/run_command.py

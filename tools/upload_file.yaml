@@ -1,0 +1,43 @@
+identity:
+  name: UploadFile
+  author: kpai
+  label:
+    en_US: UploadFile
+    zh_Hans: UploadFile
+    pt_BR: UploadFile
+description:
+  human:
+    en_US: Upload a file in a sandboxed environment.
+    zh_Hans: 上传文件到沙箱环境中
+    pt_BR: Upload a file in a sandboxed environment.
+  llm: Upload File
+parameters:
+  - name: path
+    type: string
+    required: true
+    label:
+      en_US: file path
+      zh_Hans: 文件路径
+      pt_BR: file path
+    human_description:
+      en_US: file path
+      zh_Hans: 文件路径以绝对路径进行表示，其中工作目录为:/workspace
+      pt_BR: file path
+    llm_description: the path of the file to be uploaded, absolute path, work directory is /workspace.
+    form: llm
+  - name: content
+    type: string
+    required: true
+    label:
+      en_US: file content
+      zh_Hans: 文件内容
+      pt_BR: file content
+    human_description:
+      en_US: file content
+      zh_Hans: 需要写入文件的内容
+      pt_BR: file content
+    llm_description: the content to be written to the file.
+    form: llm
+extra:
+  python:
+    source: tools/upload_file.py
