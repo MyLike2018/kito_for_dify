@@ -83,8 +83,6 @@ identity:
 tools:
   - tools/run_command.yaml
   - tools/upload_file.yaml
-  - tools/start_mcpserver.yaml
-  - tools/stop_mcpserver.yaml
   - tools/get_mcp_service.yaml
   - tools/get_web_service.yaml
 

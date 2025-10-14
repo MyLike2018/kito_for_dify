@@ -14,23 +14,13 @@ class KtoolkitsTool(Tool):
     def _ensure_start_sandbox(self, image:str, version:str):
         """
         Ensure that the sandbox is started with the specified image and version.
-        """
-        image_show = image.strip().lower()
-
-        image_addr = "registry.cn-hangzhou.aliyuncs.com/kservice/kigo-kali"
-
-        if image_show == "kigo-kali-image":
-            image_addr = "registry.cn-hangzhou.aliyuncs.com/kservice/kigo-kali"
-        
-        else:
-            raise Exception("the image is not supported by kito")
-        
+        """ 
         sandbox = None
         sandbox= ktoolkits.Tool.get_current_sandbox()
         if sandbox is None:
             name = f"sandbox_default_name_{int(time.time())}"
             sandbox = ktoolkits.Tool.create_sandbox(name=name,
-                                                    image=image_addr,
+                                                    image=image,
                                                     version=version)
             if sandbox is None:
                 raise Exception("Kito create sandbox failed")
@@ -51,6 +41,8 @@ class KtoolkitsTool(Tool):
         ktoolkits.api_key = apikey
         
         print(ktoolkits.version.__version__)
+
+        print(image)
 
         task_output = ""
 

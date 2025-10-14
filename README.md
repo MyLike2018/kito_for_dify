@@ -10,7 +10,6 @@ Kito is a powerful AI tool that pairs your AI agent with a dedicated Linux OS en
 After installing the plugin, You can obtain a **Kito API Key** by signing up at [https://kito.cloudsoc.vip](https://kito.cloudsoc.vip).
 
 
-
 ### 2. Create your API key
 
 + First, Click your [API Keys] to access the console.
@@ -38,15 +37,6 @@ Once installed, configure the plugin with your API Endpoint and API key in the p
 
 > GetMcpService
 + Get McpService Address in the sandboxed Linux OS environment.
-
-> StartMcpServer
-+ Start McpServer in the sandboxed Linux OS environment.
-
-> StopMcpServer
-+ Stop McpServer in the sandboxed Linux OS environment.
-
-> ConfigMcpServer
-+ Update the config content of mcp server.
 
 ## Key Features
 * 🧠 Process 

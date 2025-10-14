@@ -11,8 +11,9 @@ import ktoolkits
 class KtoolkitsTool(Tool):
 
     def _ensure_start_sandbox(self, image:str, version:str):
-        #image="registry.cn-hangzhou.aliyuncs.com/kservice/kigo-kali"
-        #version="0.1"
+        """
+        Ensure that the sandbox is started with the specified image and version.
+        """
         sandbox = None
         sandbox= ktoolkits.Tool.get_current_sandbox()
         if sandbox is None:
