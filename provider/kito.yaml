@@ -68,7 +68,7 @@ credentials_for_provider:
         value: latest
 
 identity:
-  author: kpai
+  author: MyLike2018
   #Dify中添加工具处显示的工具名称
   name: kito_dify
   label:
